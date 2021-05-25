@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clases",
+  "info": {
+    "name": "clases",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ClaseTitulo": {
+      "type": "string",
+      "required": true
+    },
+    "ClaseVideo": {
+      "type": "string",
+      "required": true
+    },
+    "ClaseActiva": {
+      "type": "boolean",
+      "default": true
+    },
+    "ClaseCurso": {
+      "via": "CursoClases",
+      "model": "cursos"
+    }
+  }
+}

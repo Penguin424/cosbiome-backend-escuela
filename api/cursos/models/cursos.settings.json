@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "name": "cursos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CursoTitulo": {
+      "type": "string",
+      "required": true
+    },
+    "CursoActivo": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "CursoClases": {
+      "via": "ClaseCurso",
+      "collection": "clases"
+    },
+    "CursoAlumnos": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "UsuarioCursos",
+      "dominant": true
+    }
+  }
+}
