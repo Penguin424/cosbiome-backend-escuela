@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detalletareas",
+  "info": {
+    "name": "detalletareas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TareaDetDescripcion": {
+      "type": "text"
+    },
+    "TareaDetArchivo": {
+      "type": "string"
+    },
+    "TareaDetEntrega": {
+      "type": "datetime"
+    },
+    "TareaDetCalificacion": {
+      "type": "decimal"
+    },
+    "TareaDetAlumno": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "AlumnoTareas"
+    },
+    "TareaDetTarea": {
+      "model": "tareas",
+      "via": "TareaDetalles"
+    }
+  }
+}

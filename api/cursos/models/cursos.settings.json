@@ -30,6 +30,10 @@
       "collection": "user",
       "via": "UsuarioCursos",
       "dominant": true
+    },
+    "CursoTarea": {
+      "via": "TareaCurso",
+      "collection": "tareas"
     }
   }
 }

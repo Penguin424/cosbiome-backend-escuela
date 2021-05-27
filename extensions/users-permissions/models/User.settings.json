@@ -62,6 +62,10 @@
     "UsuarioCursos": {
       "via": "CursoAlumnos",
       "collection": "cursos"
+    },
+    "AlumnoTareas": {
+      "via": "TareaDetAlumno",
+      "collection": "detalletareas"
     }
   }
 }

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tareas",
+  "info": {
+    "name": "tareas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TareaNombre": {
+      "type": "string"
+    },
+    "TareaDescripcion": {
+      "type": "text"
+    },
+    "TareaArchivo": {
+      "type": "text"
+    },
+    "TareaClase": {
+      "model": "clases",
+      "via": "ClaseTarea"
+    },
+    "TareaPuntos": {
+      "type": "decimal"
+    },
+    "TareaEntrega": {
+      "type": "datetime"
+    },
+    "TareaCurso": {
+      "model": "cursos",
+      "via": "CursoTarea"
+    },
+    "TareaDetalles": {
+      "via": "TareaDetTarea",
+      "collection": "detalletareas"
+    }
+  }
+}

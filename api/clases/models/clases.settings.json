@@ -27,6 +27,14 @@
     "ClaseCurso": {
       "via": "CursoClases",
       "model": "cursos"
+    },
+    "Clasemaestro": {
+      "via": "MestroClases",
+      "model": "maestros"
+    },
+    "ClaseTarea": {
+      "via": "TareaClase",
+      "collection": "tareas"
     }
   }
 }

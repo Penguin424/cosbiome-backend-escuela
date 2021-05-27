@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maestros",
+  "info": {
+    "name": "maestros"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MestroNombre": {
+      "type": "string"
+    },
+    "MaestroColonia": {
+      "type": "string"
+    },
+    "MaestroEstado": {
+      "type": "string"
+    },
+    "MaestroCodigoPostal": {
+      "type": "string"
+    },
+    "MaestroDireccion": {
+      "type": "string"
+    },
+    "MestroClases": {
+      "collection": "clases",
+      "via": "Clasemaestro"
+    },
+    "MaestroTelefono": {
+      "type": "string"
+    }
+  }
+}
