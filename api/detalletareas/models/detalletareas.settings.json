@@ -30,8 +30,12 @@
       "via": "AlumnoTareas"
     },
     "TareaDetTarea": {
-      "model": "tareas",
-      "via": "TareaDetalles"
+      "via": "TareaDetalles",
+      "model": "tareas"
+    },
+    "TareaDetEntregada": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

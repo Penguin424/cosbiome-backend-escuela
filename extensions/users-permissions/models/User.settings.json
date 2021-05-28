@@ -66,6 +66,18 @@
     "AlumnoTareas": {
       "via": "TareaDetAlumno",
       "collection": "detalletareas"
+    },
+    "MaestroTarea": {
+      "via": "TareaMaestro",
+      "collection": "tareas"
+    },
+    "MestroClases": {
+      "via": "Clasemaestro",
+      "collection": "clases"
+    },
+    "AlumnoAsistencias": {
+      "via": "AsistenciaAlumno",
+      "collection": "asistencias"
     }
   }
 }

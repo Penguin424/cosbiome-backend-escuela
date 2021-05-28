@@ -22,8 +22,8 @@
       "type": "text"
     },
     "TareaClase": {
-      "model": "clases",
-      "via": "ClaseTarea"
+      "via": "ClaseTarea",
+      "model": "clases"
     },
     "TareaPuntos": {
       "type": "decimal"
@@ -38,6 +38,15 @@
     "TareaDetalles": {
       "via": "TareaDetTarea",
       "collection": "detalletareas"
+    },
+    "TareaActiva": {
+      "type": "boolean",
+      "default": true
+    },
+    "TareaMaestro": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "MaestroTarea"
     }
   }
 }

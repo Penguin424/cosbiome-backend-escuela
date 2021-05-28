@@ -30,11 +30,16 @@
     },
     "Clasemaestro": {
       "via": "MestroClases",
-      "model": "maestros"
+      "model": "user",
+      "plugin": "users-permissions"
     },
     "ClaseTarea": {
       "via": "TareaClase",
       "collection": "tareas"
+    },
+    "ClaseAsistencias": {
+      "via": "AsistenciaClase",
+      "collection": "asistencias"
     }
   }
 }

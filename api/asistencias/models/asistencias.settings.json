@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asistencias",
+  "info": {
+    "name": "asistencias",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AsistenciaCheck": {
+      "type": "boolean",
+      "default": true
+    },
+    "AsistenciaFecha": {
+      "type": "datetime"
+    },
+    "AsistenciaClase": {
+      "model": "clases",
+      "via": "ClaseAsistencias"
+    },
+    "AsistenciaAlumno": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "AlumnoAsistencias"
+    }
+  }
+}
