@@ -7,7 +7,6 @@
 
 module.exports = {
   async create(ctx) {
-    let entity;
     let body = ctx.request.body;
 
     entity = await strapi.connections.default.raw(`
