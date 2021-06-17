@@ -16,7 +16,7 @@
       "type": "text"
     },
     "TareaDetArchivo": {
-      "type": "string"
+      "type": "text"
     },
     "TareaDetEntrega": {
       "type": "datetime"
