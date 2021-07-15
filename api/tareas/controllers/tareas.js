@@ -8,24 +8,27 @@
 module.exports = {
   async create(ctx) {
     let body = ctx.request.body;
+    console.log(body);
 
     entity = await strapi.connections.default.raw(`
             INSERT INTO detalletareas (
-                TareaDetDescripcion,
-                TareaDetArchivo,
-                TareaDetEntrega,
-                TareaDetCalificacion,
-                TareaDetAlumno,
-                TareaDetTarea,
-                TareaDetEntregada
+              TareaDescripcion,
+              TareaArchivo,
+              TareaEntrega,
+              TareaPuntos,
+              TareaMaestro,
+              TareaCurso,
+              TareaClase,
+              TareaActiva
             ) VALUES (
-                '${body.tareaDetDescripcion}',
-                '${body.tareaDetArchivo}',
-                '${body.tareaDetEntrega}',
-                ${body.tareaDetCalificacion},
-                ${body.tareaDetAlumno},
-                ${body.tareaDetTarea},
-                ${body.tareaDetEntregada}
+                '${body.tareaDescripcion}',
+                '${body.tareaArchivo}',
+                '${body.tareaEntrega}',
+                ${body.tareaPuntos},
+                ${body.tareaMaestro},
+                ${body.tareaCurso},
+                ${body.tareaClase},
+                ${body.tareaActiva}
             );
         `);
 
