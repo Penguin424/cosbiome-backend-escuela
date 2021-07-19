@@ -44,9 +44,9 @@
       "default": true
     },
     "TareaMaestro": {
+      "via": "MaestroTarea",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "MaestroTarea"
+      "model": "user"
     }
   }
 }

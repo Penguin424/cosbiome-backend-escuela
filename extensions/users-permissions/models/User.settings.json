@@ -78,6 +78,11 @@
     "AlumnoAsistencias": {
       "via": "AsistenciaAlumno",
       "collection": "asistencias"
+    },
+    "UsuarioFoto": {
+      "type": "text",
+      "default": "no",
+      "required": true
     }
   }
 }

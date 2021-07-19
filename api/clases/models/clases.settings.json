@@ -30,8 +30,8 @@
     },
     "Clasemaestro": {
       "via": "MestroClases",
-      "model": "user",
-      "plugin": "users-permissions"
+      "plugin": "users-permissions",
+      "model": "user"
     },
     "ClaseTarea": {
       "via": "TareaClase",

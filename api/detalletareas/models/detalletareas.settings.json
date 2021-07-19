@@ -25,9 +25,9 @@
       "type": "decimal"
     },
     "TareaDetAlumno": {
+      "via": "AlumnoTareas",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "AlumnoTareas"
+      "model": "user"
     },
     "TareaDetTarea": {
       "via": "TareaDetalles",

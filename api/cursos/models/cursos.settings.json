@@ -26,9 +26,9 @@
       "collection": "clases"
     },
     "CursoAlumnos": {
+      "via": "UsuarioCursos",
       "plugin": "users-permissions",
       "collection": "user",
-      "via": "UsuarioCursos",
       "dominant": true
     },
     "CursoTarea": {

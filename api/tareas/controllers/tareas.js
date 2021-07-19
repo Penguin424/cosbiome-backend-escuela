@@ -11,9 +11,10 @@ module.exports = {
     console.log(body);
 
     entity = await strapi.connections.default.raw(`
-            INSERT INTO detalletareas (
+            INSERT INTO tareas (
               TareaDescripcion,
               TareaArchivo,
+              TareaNombre,
               TareaEntrega,
               TareaPuntos,
               TareaMaestro,
@@ -23,6 +24,7 @@ module.exports = {
             ) VALUES (
                 '${body.tareaDescripcion}',
                 '${body.tareaArchivo}',
+                '${body.tareaNombre}',
                 '${body.tareaEntrega}',
                 ${body.tareaPuntos},
                 ${body.tareaMaestro},

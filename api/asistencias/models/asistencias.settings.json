@@ -24,9 +24,9 @@
       "via": "ClaseAsistencias"
     },
     "AsistenciaAlumno": {
+      "via": "AlumnoAsistencias",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "AlumnoAsistencias"
+      "model": "user"
     }
   }
 }
